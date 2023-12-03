@@ -39,7 +39,7 @@ with open('eeg_data_blink.csv', 'w', newline='') as file:
         parsed_data = parse_eeg_data(data)
 
         # Append the label 'Crunch'
-        parsed_data.append('Crunch')
+        parsed_data.append('blink')
 
         # Write to CSV
         writer.writerow(parsed_data)
