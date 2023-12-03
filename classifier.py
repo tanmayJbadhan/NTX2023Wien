@@ -5,10 +5,12 @@ from sklearn.metrics import accuracy_score
 
 # Load data from CSV files
 blink_data = pd.read_csv('eeg_data_blink.csv')
+print(len(blink_data))
 crunch_data = pd.read_csv('eeg_data_crunch.csv')
 
 # Concatenate the data from both files
 combined_data = pd.concat([blink_data, crunch_data], ignore_index=True)
+print(len(combined_data))
 
 # Split the data into features (X) and labels (y)
 X = combined_data.drop(columns=['Label'])
