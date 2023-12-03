@@ -4,6 +4,7 @@
     <head>
        <title>Topic X E-Learning</title>
        <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
        <meta charset="UTF-8">
     </head>
     <body>
@@ -16,6 +17,7 @@
                         <li><a href="#games">Games</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="#about">Contact</a></li>
+                        <li><a href="#"><i class="fas fa-user"></i>  Log In</a></li>
                     </ul>
                 </nav>
             </header>
@@ -27,7 +29,7 @@
 
         <div class="separator">
             <h2>“The only thing that can defeat power, is more power.”</h2>
-            <p>- Resident Evil: Umbrella Chronicles</p>
+            <p><i>- Resident Evil: Umbrella Chronicles</i></p>
         </div>
 
         <div class="container" id="games">
@@ -57,13 +59,83 @@
                 </div>
         </div>
 
-        <div class="separator">
-            <h2>“It’s dangerous to go alone, take this!”</h2>
-            <p>- The Legend of Zelda</p>
+        <div class="schedule">
+            <h2>Set up you study schedule!</h2>
+            <button class="button"><a href="#calendar"><span>Let's Go </span></a></button>
         </div>
 
-        <div class="learning"></div>
+        <div class="separator">
+            <h2>“It’s dangerous to go alone, take this!”</h2>
+            <p><i>- The Legend of Zelda</i></p>
+        </div>
 
-        <footer></footer>
+        <div class="wrapper" id="calendar">
+            <div class="header">
+                <p class="current-date">December 2023</p>
+                <div class="icons">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="calendar">
+                <ul class="weeks"> 
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                </ul>
+                <ul class="days"> 
+                    <li class="inactive">26</li>
+                    <li class="inactive">27</li>
+                    <li class="inactive">28</li>
+                    <li class="inactive">29</li>
+                    <li class="inactive">30</li>
+                    <li>1</li>
+                    <li>2</li>
+                    <li class="active">3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <img class="logo" src="Topic X1.png">
+            <div class="footer">
+                <p>This project was brought to you by the Topic X team.</p>
+                <p>Check the full code on <a href="#">GitHub</a>.</p>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+        </footer>
     </body>
 </html>
