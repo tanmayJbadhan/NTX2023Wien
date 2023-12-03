@@ -69,6 +69,10 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 .main-quote {
     box-shadow: 0px 1px 20px 2px rgba(140,56,116,1);
     width: 100%;
@@ -99,7 +103,7 @@ nav ul li a:hover::after {
 
 .separator {
     text-align: center;
-    margin-top: 80px;
+    margin-top: 70px;
     margin-bottom: 40px;
     padding: 10px;
 }
@@ -125,7 +129,7 @@ nav ul li a:hover::after {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .game {
@@ -167,17 +171,70 @@ nav ul li a:hover::after {
     height: 100%;
 } 
 
+.schedule {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.button {
+    width: 200px;
+    height: 70px;
+    background-color: #63549C;
+    color: white;
+    font-size: 25px;
+    border-style: none;
+    border-radius: 33px;
+    margin-top: 25px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+   
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+   
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+   
+.button:hover span {
+    padding-right: 25px;
+}
+   
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
 /*ABOUT PAGE*/
 
 .about {
     margin-left: auto;
     margin-right: auto;
     width: 700px;
-    height: 300px;
     background-color: white;
     color: #432D73;
     border: 1px solid #432D73;
     border-radius: 7px;
+}
+
+.gamify {
+    margin-bottom: 20px;
+}
+
+.work {
+    margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 .about h2 {
@@ -233,4 +290,120 @@ nav ul li a:hover::after {
     font-weight: bold;
     color:#432D73;
     font-family: 'Poppins', sans-serif;
+}
+
+/*CALENDER*/
+.wrapper{
+    width: 450px;
+    background-color: white;
+    color: #432D73;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.wrapper .header {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+}
+
+.header .current-date {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+.header .icons i {
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+}
+
+.header .icons i:hover {
+    background-color: #f2f2f2;
+}
+
+.calendar {
+    padding: 20px;
+}
+
+.calendar ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.calendar ul li {
+    position: relative;
+    width: calc(100% / 7);
+}
+
+.calendar .weeks li {
+    font-weight: 500;
+
+}
+
+.calendar .days li {
+    margin-top: 30px;
+    cursor: pointer;
+    z-index: 1;  
+}
+
+.days li.inactive {
+    color: #aaa;
+} 
+
+.days li.active {
+    color: #fff;
+} 
+
+.calendar .days {
+    margin-bottom: 10px;
+}
+.calendar .days li::before {
+    position: absolute;
+    content: '';
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li:hover::before {
+    background-color: #f2f2f2;
+}
+
+.days li.active::before {
+    background-color: #d95585;
+}
+
+/*FOOTER*/
+
+footer {
+    margin-top: 30px;
+    background-color: #63549C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer {
+    margin-top: 40px;
+    font-size: 17px;
+}
+
+.footer i {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    padding-right: 5px;
 }
